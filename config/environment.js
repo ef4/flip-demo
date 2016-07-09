@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/flip-demo';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
