@@ -1,0 +1,15 @@
+<div class="step-three-container">
+
+  {{#growing-card flipped=flipped }}
+    <div class="message-card pink" {{action (action (mut flipped) true) }}>
+      <h2>Click me!</h2>
+    </div>
+  {{else}}
+    <div class="message-card" {{action (action (mut flipped) false) }}>
+      <h2>check you on the flip side. </h2>
+    </div>
+  {{/growing-card}}
+
+</div>
+
+Stuff below the card.

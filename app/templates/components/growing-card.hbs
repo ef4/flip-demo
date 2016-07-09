@@ -1,0 +1,5 @@
+{{#liquid-unless flipped use=flip growDuration=400 }}
+  {{yield}}
+{{else}}
+  {{yield to="inverse"}}
+{{/liquid-unless}}
