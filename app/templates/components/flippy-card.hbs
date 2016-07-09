@@ -1,0 +1,8 @@
+<div class="flippy-card {{if flipped 'flipped'}} ">
+  <div class="front">
+    {{yield}}
+  </div>
+  <div class="back">
+    {{yield to="inverse"}}
+  </div>
+</div>
