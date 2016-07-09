@@ -1,8 +1,21 @@
 @import "index.css";
 @import "step-two.css";
 @import "step-three.css";
+@import "step-four.css";
 
 body {
     font-size: 24px;
     font-family: sans-serif;
+}
+
+input {
+    font-size: 24px;
+    width: 20em;
+}
+
+button {
+    font-size: 24px;
+    padding: 5px 1.5em;
+    border-radius: 4px;
+    background-color: #eee
 }

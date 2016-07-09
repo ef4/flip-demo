@@ -1,0 +1,21 @@
+<div class="step-four-container">
+
+  {{#multi-card content=content as |c| }}
+    <div class="message-card {{c.class}}">
+      <h2>{{c.message}}</h2>
+    </div>
+  {{/multi-card}}
+
+</div>
+
+<p>
+  <label>Next message</label>
+  {{input value=nextMessage}}
+</p>
+
+<p>
+  <label for="is-next-pink">Make it pink?</label>
+  {{input type="checkbox" checked=nextCardPink id="is-next-pink"}}
+</p>
+
+<button {{action "update"}}>Update</button>
